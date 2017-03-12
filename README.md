@@ -10,6 +10,8 @@ the unit tests created by the universities.
 
 #About the courses
 OOP w/ Java I: [click here]http://mooc.fi/courses/2013/programming-part-1/
+
 OOP w/ Java II: [click here]http://mooc.fi/courses/2013/programming-part-2/
+
 Aalato C: [click here]http://mooc.fi/courses/2016/aalto-c/en/
 
