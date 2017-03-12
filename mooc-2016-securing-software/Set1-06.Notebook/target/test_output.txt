@@ -1,0 +1,1 @@
+[{"className":"sec.notebook.NotebookTest","methodName":"contentFromFormAddedToNotebook","pointNames":["6"],"status":"PASSED"},{"className":"sec.notebook.NotebookTest","methodName":"onlyTenLatestMessagesShown","pointNames":["6"],"status":"PASSED"}]

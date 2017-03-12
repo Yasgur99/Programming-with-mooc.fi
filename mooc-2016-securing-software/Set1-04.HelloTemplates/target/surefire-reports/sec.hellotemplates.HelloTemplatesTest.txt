@@ -1,0 +1,62 @@
+-------------------------------------------------------------------------------
+Test set: sec.hellotemplates.HelloTemplatesTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 23.211 sec <<< FAILURE! - in sec.hellotemplates.HelloTemplatesTest
+videoShownAtVideo(sec.hellotemplates.HelloTemplatesTest)  Time elapsed: 0.868 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+ <"<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head/>
+  <body>
+    <h1>
+      Whitelabel Error Page
+    </h1>
+    <p>
+      This application has no explicit mapping for /error, so you are seeing this as a fallback.
+    </p>
+    <div id="created">
+      Tue Nov 15 06:57:40 EST 2016
+    </div>
+    <div>
+      There was an unexpected error (type=Not Found, status=404).
+    </div>
+    <div>
+      No message available
+    </div>
+  </body>
+</html>
+">
+to contain:
+ <"dQw4w9WgXcQ"> 
+	at sec.hellotemplates.HelloTemplatesTest.videoShownAtVideo(HelloTemplatesTest.java:45)
+
+indexShownAtRoot(sec.hellotemplates.HelloTemplatesTest)  Time elapsed: 0.07 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expecting:
+ <"<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head/>
+  <body>
+    <h1>
+      Whitelabel Error Page
+    </h1>
+    <p>
+      This application has no explicit mapping for /error, so you are seeing this as a fallback.
+    </p>
+    <div id="created">
+      Tue Nov 15 06:57:40 EST 2016
+    </div>
+    <div>
+      There was an unexpected error (type=Not Found, status=404).
+    </div>
+    <div>
+      No message available
+    </div>
+  </body>
+</html>
+">
+to contain:
+ <"Hello Thymeleaf"> 
+	at sec.hellotemplates.HelloTemplatesTest.indexShownAtRoot(HelloTemplatesTest.java:38)
+

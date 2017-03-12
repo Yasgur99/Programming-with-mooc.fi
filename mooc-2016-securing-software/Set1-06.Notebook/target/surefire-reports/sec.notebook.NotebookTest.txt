@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: sec.notebook.NotebookTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 23.068 sec <<< FAILURE! - in sec.notebook.NotebookTest
+contentFromFormAddedToNotebook(sec.notebook.NotebookTest)  Time elapsed: 1.067 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'michael-ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-45-generic', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentListImpl.text(FluentListImpl.java:78)
+	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:39)
+	at sec.notebook.NotebookTest.addContent(NotebookTest.java:51)
+	at sec.notebook.NotebookTest.contentFromFormAddedToNotebook(NotebookTest.java:34)
+
+onlyTenLatestMessagesShown(sec.notebook.NotebookTest)  Time elapsed: 0.056 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: No element is displayed or enabled. Can't set a new value.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'michael-ubuntu', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.4.0-45-generic', java.version: '1.8.0_111'
+Driver info: driver.version: unknown
+	at org.fluentlenium.core.domain.FluentListImpl.text(FluentListImpl.java:78)
+	at org.fluentlenium.core.action.FillConstructor.with(FillConstructor.java:39)
+	at sec.notebook.NotebookTest.addContent(NotebookTest.java:51)
+	at sec.notebook.NotebookTest.onlyTenLatestMessagesShown(NotebookTest.java:39)
+

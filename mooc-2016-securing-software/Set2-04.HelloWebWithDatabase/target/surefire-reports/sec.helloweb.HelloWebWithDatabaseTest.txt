@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: sec.helloweb.HelloWebWithDatabaseTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.546 sec <<< FAILURE! - in sec.helloweb.HelloWebWithDatabaseTest
+contentIsRetrievedFromDatabase(sec.helloweb.HelloWebWithDatabaseTest)  Time elapsed: 0.084 sec  <<< FAILURE!
+java.lang.AssertionError: When there are messages in the database and a user queries the site, 
+the text content of a random message (from the database) should be shown to the user. Right now, not all messages from the database are used.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at sec.helloweb.HelloWebWithDatabaseTest.contentIsRetrievedFromDatabase(HelloWebWithDatabaseTest.java:59)
+

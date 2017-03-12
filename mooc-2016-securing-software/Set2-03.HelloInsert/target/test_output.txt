@@ -1,0 +1,1 @@
+[{"className":"sec.helloinsert.HelloInsertTest","methodName":"testAddAgent","pointNames":["S2.03"],"status":"PASSED"},{"className":"sec.helloinsert.HelloInsertTest","methodName":"testRandomAgent","pointNames":["S2.03"],"status":"PASSED"}]

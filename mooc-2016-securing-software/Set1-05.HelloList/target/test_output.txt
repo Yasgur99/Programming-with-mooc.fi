@@ -1,0 +1,1 @@
+[{"className":"sec.hellolist.HelloListTest","methodName":"contentFromFormAddedToList","pointNames":["5"],"status":"PASSED"}]

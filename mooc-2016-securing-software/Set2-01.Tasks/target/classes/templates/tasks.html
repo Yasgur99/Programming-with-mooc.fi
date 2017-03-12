@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+        <meta charset="UTF-8" />
+        <title>Tasks</title>
+    </head>
+    <body>
+ 
+        <h2>Tasks</h2>
+ 
+        <!-- TODO: add the ability to list tasks -->
+        <ui id="tasks">
+             <li th:each="item : ${tasks}">
+        <span th:text="${item}">hello world!</span>
+    </li>
+         </ui>
+        
+ 
+ 
+        <form>
+            <input type="text" name="name" id="name"/>
+            <input type="button" onclick="addTask();" value="Add!"/>
+        </form>
+ 
+        <!-- the javascript has been embedded to the same site -->
+        <script th:inline="javascript">
+            var url = /*[[@{/tasks}]]*/ null;
+ 
+            function loadTasks() {
+                var http = new XMLHttpRequest();
+                http.open("GET", url, true);
+                
+              
+                http.onreadystatechange = function () {
+                    if (http.readyState === 4) {
+                        if (http.status === 200) {
+                            console.log(http.responseText);
+                            var task = JSON.parse(http.responseText);
+                            console.log(task.length);
+                            for (var i = task.length - 1; i >= 0; i--) {
+                                var liElement = document.createElement("li");
+                            liElement.appendChild(document.createTextNode(task[i].name));
+                            document.querySelector("#tasks").appendChild(liElement);
+                            console.log("dsahf");
+                            }
+                        }
+                    }
+                };
+                http.send();
+            }
+            
+ 
+            function addTask() {
+                var name = document.querySelector("#name").value;
+                if (!name) {
+                    return;
+                }
+ 
+                console.log(name);
+ 
+                var http = new XMLHttpRequest();
+                http.open("POST", url, true);
+                http.setRequestHeader("Content-type", "application/json");
+                var data = new Object();
+                data.name = name;
+ 
+                http.onreadystatechange = function () {
+                    if (http.readyState === 4) {
+                        if (http.status === 200) {
+                            addTaskToList(JSON.parse(http.responseText));
+                        }
+                    }
+                };
+ 
+                http.send(JSON.stringify(data));
+            }
+ 
+ 
+            function addTaskToList(task) {
+                var liElement = document.createElement("li");
+                liElement.appendChild(document.createTextNode(task.name));
+                document.querySelector("#tasks").appendChild(liElement);
+            }
+ 
+ 
+            window.onload = function () {
+                loadTasks();
+            };
+        </script>
+    </body>
+</html>

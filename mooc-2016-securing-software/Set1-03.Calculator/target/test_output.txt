@@ -1,0 +1,1 @@
+[{"className":"sec.calculator.CalculatorTest","methodName":"addTest","pointNames":["3"],"status":"PASSED"},{"className":"sec.calculator.CalculatorTest","methodName":"multiplyTest","pointNames":["3"],"status":"PASSED"}]

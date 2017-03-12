@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="sec.helloweb.HelloWebWithDatabaseTest" time="0.084" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.111-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase"/>
+    <property name="java.runtime.version" value="1.8.0_111-8u111-b14-2ubuntu0.16.04.2-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="maven.ext.class.path" value="/home/yasgur99/.netbeans/8.1/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/home/yasgur99/.netbeans/8.1/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/bin/../jre/lib/amd64:/usr/lib/jvm/java-8-openjdk-amd64/bin/../jre/lib/i386::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.4.0-45-generic"/>
+    <property name="user.home" value="/home/yasgur99"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="yasgur99"/>
+    <property name="java.class.path" value="/home/yasgur99/.netbeans/8.1/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/home/yasgur99/.netbeans/8.1/maven-nblib/netbeans-eventspy.jar clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_111"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/yasgur99/.netbeans/8.1/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="contentIsRetrievedFromDatabase" classname="sec.helloweb.HelloWebWithDatabaseTest" time="0.084">
+    <failure message="When there are messages in the database and a user queries the site, &#10;the text content of a random message (from the database) should be shown to the user. Right now, not all messages from the database are used." type="java.lang.AssertionError">java.lang.AssertionError: When there are messages in the database and a user queries the site, 
+the text content of a random message (from the database) should be shown to the user. Right now, not all messages from the database are used.
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at sec.helloweb.HelloWebWithDatabaseTest.contentIsRetrievedFromDatabase(HelloWebWithDatabaseTest.java:59)
+</failure>
+    <system-out><![CDATA[06:57:44.946 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class sec.helloweb.HelloWebWithDatabaseTest]
+06:57:44.976 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+06:57:44.996 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+06:57:45.028 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sec.helloweb.HelloWebWithDatabaseTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+06:57:45.045 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sec.helloweb.HelloWebWithDatabaseTest], using SpringBootContextLoader
+06:57:45.048 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sec.helloweb.HelloWebWithDatabaseTest]: class path resource [sec/helloweb/HelloWebWithDatabaseTest-context.xml] does not exist
+06:57:45.049 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sec.helloweb.HelloWebWithDatabaseTest]: class path resource [sec/helloweb/HelloWebWithDatabaseTestContext.groovy] does not exist
+06:57:45.049 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sec.helloweb.HelloWebWithDatabaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+06:57:45.050 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sec.helloweb.HelloWebWithDatabaseTest]: HelloWebWithDatabaseTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+06:57:45.163 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.217 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+06:57:45.219 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+06:57:45.219 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+06:57:45.230 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved classpath location [sec/helloweb/] to resources [URL [file:/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/test-classes/sec/helloweb/], URL [file:/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb/]]
+06:57:45.232 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/test-classes/sec/helloweb]
+06:57:45.232 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/test-classes/sec/helloweb] for files matching pattern [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/test-classes/sec/helloweb/*.class]
+06:57:45.236 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb]
+06:57:45.236 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Searching directory [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb] for files matching pattern [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb/*.class]
+06:57:45.238 [main] DEBUG org.springframework.core.io.support.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:sec/helloweb/*.class] to resources [file [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/test-classes/sec/helloweb/HelloWebWithDatabaseTest.class], file [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb/HelloMessage.class], file [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb/HelloMessageRepository.class], file [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb/HelloWebWithDatabaseApplication.class], file [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb/HelloWebWithDatabaseController.class]]
+06:57:45.303 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase/target/classes/sec/helloweb/HelloWebWithDatabaseApplication.class]
+06:57:45.311 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sec.helloweb.HelloWebWithDatabaseApplication for test class sec.helloweb.HelloWebWithDatabaseTest
+06:57:45.314 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sec.helloweb.HelloWebWithDatabaseTest]: using defaults.
+06:57:45.322 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+06:57:45.420 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3e3047e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@37e547da, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b6856dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5db45159, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6107227e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7c417213, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@15761df8, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6ab7a896, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@327b636c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@45dd4eda, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@60611244, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3745e5c6]
+06:57:45.422 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.424 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.426 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.427 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+06:57:45.427 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+06:57:45.428 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [sec.helloweb.HelloWebWithDatabaseTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+06:57:45.428 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [sec.helloweb.HelloWebWithDatabaseTest], using SpringBootContextLoader
+06:57:45.429 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sec.helloweb.HelloWebWithDatabaseTest]: class path resource [sec/helloweb/HelloWebWithDatabaseTest-context.xml] does not exist
+06:57:45.429 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [sec.helloweb.HelloWebWithDatabaseTest]: class path resource [sec/helloweb/HelloWebWithDatabaseTestContext.groovy] does not exist
+06:57:45.429 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [sec.helloweb.HelloWebWithDatabaseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+06:57:45.429 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [sec.helloweb.HelloWebWithDatabaseTest]: HelloWebWithDatabaseTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+06:57:45.436 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.438 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+06:57:45.438 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+06:57:45.439 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+06:57:45.440 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration sec.helloweb.HelloWebWithDatabaseApplication for test class sec.helloweb.HelloWebWithDatabaseTest
+06:57:45.447 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [sec.helloweb.HelloWebWithDatabaseTest]: using defaults.
+06:57:45.450 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+06:57:45.455 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@45018215, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@65d6b83b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@d706f19, org.springframework.test.context.support.DirtiesContextTestExecutionListener@30b7c004, org.springframework.test.context.transaction.TransactionalTestExecutionListener@79efed2d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2928854b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@27ae2fd0, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@29176cc1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2f177a4b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4278a03f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@147ed70f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@61dd025]
+06:57:45.472 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.473 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.473 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.474 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.476 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@54c562f7 testClass = HelloWebWithDatabaseTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@318ba8c8 testClass = HelloWebWithDatabaseTest, locations = '{}', classes = '{class sec.helloweb.HelloWebWithDatabaseApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@6321e813, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@57855c9a, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@1d29cf23], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+06:57:45.477 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.481 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [sec.helloweb.HelloWebWithDatabaseTest]
+06:57:45.523 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+06:57:45.523 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+06:57:45.524 [main] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+06:57:45.525 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+06:57:45.526 [main] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.1.RELEASE)
+
+2016-11-15 06:57:45.922  INFO 13670 --- [           main] sec.helloweb.HelloWebWithDatabaseTest    : Starting HelloWebWithDatabaseTest on michael-ubuntu with PID 13670 (started by yasgur99 in /home/yasgur99/Documents/JavaProjects/mooc-2016-securing-software/Set2-04.HelloWebWithDatabase)
+2016-11-15 06:57:45.923  INFO 13670 --- [           main] sec.helloweb.HelloWebWithDatabaseTest    : No active profile set, falling back to default profiles: default
+2016-11-15 06:57:46.150  INFO 13670 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@57db2b13: startup date [Tue Nov 15 06:57:46 EST 2016]; root of context hierarchy
+2016-11-15 06:57:47.350  INFO 13670 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4836f4ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2016-11-15 06:57:47.960  INFO 13670 --- [           main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2016-11-15 06:57:47.971  INFO 13670 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2016-11-15 06:57:48.012  INFO 13670 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2016-11-15 06:57:48.012  INFO 13670 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2016-11-15 06:57:48.013  INFO 13670 --- [           main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2016-11-15 06:57:48.037  INFO 13670 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2016-11-15 06:57:48.190  INFO 13670 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2016-11-15 06:57:48.815  INFO 13670 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2016-11-15 06:57:48.823  INFO 13670 --- [           main] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2016-11-15 06:57:48.859  INFO 13670 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2016-11-15 06:57:49.344  INFO 13670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@57db2b13: startup date [Tue Nov 15 06:57:46 EST 2016]; root of context hierarchy
+2016-11-15 06:57:49.396  INFO 13670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String sec.helloweb.HelloWebWithDatabaseController.home()
+2016-11-15 06:57:49.400  INFO 13670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-11-15 06:57:49.401  INFO 13670 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-11-15 06:57:49.420  INFO 13670 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-15 06:57:49.420  INFO 13670 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-15 06:57:49.440  INFO 13670 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-11-15 06:57:49.459  WARN 13670 --- [           main] .t.AbstractTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2016-11-15 06:57:49.879  INFO 13670 --- [           main] sec.helloweb.HelloWebWithDatabaseTest    : Started HelloWebWithDatabaseTest in 4.346 seconds (JVM running for 5.826)
+2016-11-15 06:57:49.897  INFO 13670 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2016-11-15 06:57:49.897  INFO 13670 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2016-11-15 06:57:49.904  INFO 13670 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 7 ms
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,1 @@
+[{"className":"sec.hellotemplates.HelloTemplatesTest","methodName":"indexShownAtRoot","pointNames":["4"],"status":"PASSED"},{"className":"sec.hellotemplates.HelloTemplatesTest","methodName":"videoShownAtVideo","pointNames":["4"],"status":"PASSED"}]
