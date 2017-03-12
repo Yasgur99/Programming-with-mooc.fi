@@ -6,7 +6,7 @@ This repository contains my code from the following courses:
     d) Cyber Security Base with F-Secure - Univeristy of Helsinki and F-Secure Cyber Secuirty Accademy
 
 Each lab within the courses are formatted as Netbeans projects and besides for the
-last few excersizes in the C course (I'm currently completing it), everything passes 
+last few excersizes in the C course and Cyber ecurity course (I'm currently completing them), everything passes 
 the unit tests created by the universities.
 
 #About the courses
