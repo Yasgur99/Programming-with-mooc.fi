@@ -1,0 +1,31 @@
+==13706== Memcheck, a memory error detector
+==13706== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==13706== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==13706== Command: ./test/test
+==13706== Parent PID: 21262
+==13706== 
+==13712== 
+==13712== HEAP SUMMARY:
+==13712==     in use at exit: 1,690 bytes in 30 blocks
+==13712==   total heap usage: 53 allocs, 23 frees, 26,031 bytes allocated
+==13712== 
+==13712== LEAK SUMMARY:
+==13712==    definitely lost: 0 bytes in 0 blocks
+==13712==    indirectly lost: 0 bytes in 0 blocks
+==13712==      possibly lost: 0 bytes in 0 blocks
+==13712==    still reachable: 1,690 bytes in 30 blocks
+==13712==         suppressed: 0 bytes in 0 blocks
+==13712== Reachable blocks (those to which a pointer was found) are not shown.
+==13712== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==13712== 
+==13712== For counts of detected and suppressed errors, rerun with: -v
+==13712== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==13706== 
+==13706== HEAP SUMMARY:
+==13706==     in use at exit: 0 bytes in 0 blocks
+==13706==   total heap usage: 59 allocs, 59 frees, 34,969 bytes allocated
+==13706== 
+==13706== All heap blocks were freed -- no leaks are possible
+==13706== 
+==13706== For counts of detected and suppressed errors, rerun with: -v
+==13706== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

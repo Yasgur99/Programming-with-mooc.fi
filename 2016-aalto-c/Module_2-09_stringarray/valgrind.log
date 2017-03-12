@@ -1,0 +1,47 @@
+==19612== Memcheck, a memory error detector
+==19612== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==19612== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==19612== Command: ./test/test
+==19612== Parent PID: 21262
+==19612== 
+==19616== 
+==19616== HEAP SUMMARY:
+==19616==     in use at exit: 2,564 bytes in 46 blocks
+==19616==   total heap usage: 79 allocs, 33 frees, 35,320 bytes allocated
+==19616== 
+==19616== LEAK SUMMARY:
+==19616==    definitely lost: 0 bytes in 0 blocks
+==19616==    indirectly lost: 0 bytes in 0 blocks
+==19616==      possibly lost: 0 bytes in 0 blocks
+==19616==    still reachable: 2,564 bytes in 46 blocks
+==19616==         suppressed: 0 bytes in 0 blocks
+==19616== Reachable blocks (those to which a pointer was found) are not shown.
+==19616== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==19616== 
+==19616== For counts of detected and suppressed errors, rerun with: -v
+==19616== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19617== 
+==19617== HEAP SUMMARY:
+==19617==     in use at exit: 2,089 bytes in 48 blocks
+==19617==   total heap usage: 109 allocs, 61 frees, 40,117 bytes allocated
+==19617== 
+==19617== LEAK SUMMARY:
+==19617==    definitely lost: 0 bytes in 0 blocks
+==19617==    indirectly lost: 0 bytes in 0 blocks
+==19617==      possibly lost: 0 bytes in 0 blocks
+==19617==    still reachable: 2,089 bytes in 48 blocks
+==19617==         suppressed: 0 bytes in 0 blocks
+==19617== Reachable blocks (those to which a pointer was found) are not shown.
+==19617== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==19617== 
+==19617== For counts of detected and suppressed errors, rerun with: -v
+==19617== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19612== 
+==19612== HEAP SUMMARY:
+==19612==     in use at exit: 0 bytes in 0 blocks
+==19612==   total heap usage: 108 allocs, 108 frees, 48,792 bytes allocated
+==19612== 
+==19612== All heap blocks were freed -- no leaks are possible
+==19612== 
+==19612== For counts of detected and suppressed errors, rerun with: -v
+==19612== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
